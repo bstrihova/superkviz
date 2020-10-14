@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&subset=latin-ext");
+
+/* nastaveni barev */
+:root {
+  --cervena: #ff0844;
+  --oranzova: #ffb199;
+  --seda: #e0e0e0;
+}
+
+/* Odtud dolů už je jen magie a jednorožci */
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-image: linear-gradient(
+    to top,
+    var(--cervena) 0%,
+    var(--oranzova) 100%
+  );
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bangers", cursive;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 120px;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.kviz,
+.vysledek {
+  margin: 30px auto;
+  padding: 50px;
+  width: 800px;
+  min-height: 400px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#poradi {
+  margin: 0 0 20px 0;
+  font-family: "Bangers", cursive;
+  font-size: 24px;
+  text-align: center;
+  color: var(--cervena);
+}
+
+#otazka {
+  margin: 20px 0 30px 0;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: black;
+}
+
+.obsah {
+  display: flex;
+  align-items: center;
+}
+
+.foto {
+  width: 250px;
+  margin-right: 30px;
+}
+
+#obrazek {
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px dotted var(--cervena);
+}
+
+#moznosti {
+  flex: 1;
+}
+
+#odpovedi {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  list-style: none;
+}
+
+#odpovedi li {
+  margin: 0 0 20px 0;
+  padding: 10px 30px;
+  background-color: var(--seda);
+  border-radius: 100px;
+  transition: all 0.2s;
+  transform: translateX(0);
+}
+
+#odpovedi li:hover {
+  background-color: var(--cervena);
+  color: white;
+  cursor: pointer;
+  transform: translateX(-10px);
+}
+
+.vysledek {
+  display: none;
+}
+
+.vysledek h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  color: var(--cervena);
+}

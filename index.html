@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Superkvíz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Superkvíz</h1>
+
+    <div class="kviz">
+      <p id="poradi">Otázka 1 / 5</p>
+
+      <h2 id="problem">Zrcadlo, kdo je na světě nejkrásnější?</h2>
+
+      <div class="obsah">
+        <div class="foto">
+          <img
+            id="obrazek"
+            src="obrazky/snehurka.jpg"
+            alt="Ilustrační obrázek"
+          />
+        </div>
+        <div id="moznosti">
+          <ul id="odpovedi">
+            <li data-odpoved="0">Ledová královna</li>
+            <li data-odpoved="1">Sněhurka</li>
+            <li data-odpoved="2">Já! Já jsem nejkrásnější.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="vysledek">
+      <h2>Tvoje hodnocení</h2>
+      <div id="hodnoceni"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
